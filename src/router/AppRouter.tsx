@@ -7,6 +7,7 @@ import SettingsPage from '../pages/SettingsPage'
 import TeamPage from '../pages/TeamPage'
 import UnauthorizedPage from '../pages/UnauthorizedPage'
 import NotFoundPage from '../pages/NotFoundPage'
+import OverviewPage from '../pages/OverviewPage'
 import ProtectedRoute from './ProtectedRoute'
 
 const AppRouter = () => {
@@ -14,6 +15,7 @@ const AppRouter = () => {
     <Routes>
       <Route element={<AppLayout />}>
         <Route index element={<DashboardPage />} />
+        <Route path="overview" element={<OverviewPage />} />
         <Route path="analytics" element={<AnalyticsPage />} />
         <Route path="team" element={<TeamPage />} />
         <Route

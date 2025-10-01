@@ -6,6 +6,7 @@ import {
   LineChart,
   Lock,
   Settings,
+  Sparkles,
   Users,
 } from 'lucide-react'
 import clsx from 'clsx'
@@ -26,6 +27,13 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
+  {
+    label: 'Guided tour',
+    to: '/overview',
+    icon: Sparkles,
+    roles: ['admin', 'editor', 'viewer'],
+    description: 'Orientation, stack notes, and demo steps',
+  },
   {
     label: 'Dashboard',
     to: '/',
